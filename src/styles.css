@@ -4,6 +4,7 @@
     --black:#000000;
     --lite-blue: #005AAB;
     --dark-blue:#062965;
+    --gray:#777777;
   }
   .container{
     display: flex;
