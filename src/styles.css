@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
     --white:#FFFFFF;
+    --black:#000000;
     --lite-blue: #005AAB;
+    --dark-blue:#062965;
   }
-  
+  .container{
+    display: flex;
+  }

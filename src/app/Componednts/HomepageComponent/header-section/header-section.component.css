@@ -8,33 +8,34 @@
     padding: 10px;
 }
 
-.left-header, .right-header {
+.left-header,
+.right-header {
     display: flex;
     gap: 20px;
-    align-items: center; 
+    align-items: center;
 }
-.right-header{
+
+.right-header {
     justify-content: flex-end;
 }
-i, p {
+
+i,
+p {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 14px;
     color: var(--white);
+    cursor: pointer;
 }
-p{
+
+p {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin: 0;
 }
-img{
+
+img {
     width: 20px;
     height: 20px;
-}
-@media (max-width: 576px) {
-    i, p {
-        gap: 5px;
-        font-size: 12px;
-    }
 }
