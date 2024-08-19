@@ -7,6 +7,7 @@ import { HeaderSectionComponent } from './Componednts/HomepageComponent/header-s
 import { HomepageComponent } from './Componednts/HomepageComponent/homepage/homepage.component';
 import { NavBarComponent } from './Componednts/HomepageComponent/nav-bar/nav-bar.component';
 import { AboutSectionComponent } from './Componednts/HomepageComponent/about-section/about-section.component';
+import { RentCardsComponent } from './Componednts/HomepageComponent/rent-cards/rent-cards.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AboutSectionComponent } from './Componednts/HomepageComponent/about-sec
     HomepageComponent,
     NavBarComponent,
     AboutSectionComponent,
+    RentCardsComponent,
   ],
   imports: [
     BrowserModule,
