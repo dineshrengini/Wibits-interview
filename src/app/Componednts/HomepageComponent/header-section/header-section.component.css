@@ -1,0 +1,40 @@
+.main-container {
+    background-color: var(--lite-blue);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left-header, .right-header {
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+}
+.right-header{
+    justify-content: flex-end;
+}
+i, p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--white);
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+@media (max-width: 576px) {
+    i, p {
+        gap: 5px;
+        font-size: 12px;
+    }
+}
