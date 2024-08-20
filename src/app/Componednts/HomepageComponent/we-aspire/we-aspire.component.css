@@ -1,0 +1,106 @@
+.main-container {
+    position: relative;
+    margin-top: 50px;
+    padding: 100px;
+    background-image: url("../../../../assets/Homepage-images/we-aspeir.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.heading h1 {
+    padding: 0 150px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+.inner-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+.para {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(max-width: 991px) {
+    .main-container {
+        padding: 50px;
+    }
+
+    .heading h1 {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading h1 {
+        padding: 0 50px;
+        font-size: 24px;
+    }
+
+    .sub-heading {
+        font-size: 24px;
+    }
+
+    .content {
+        flex: 1 1 150px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-container {
+        padding: 50px;
+    }
+
+    .heading h1 {
+        padding: 0;
+        font-size: 24px;
+    }
+}
