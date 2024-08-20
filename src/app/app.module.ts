@@ -10,6 +10,7 @@ import { AboutSectionComponent } from './Componednts/HomepageComponent/about-sec
 import { RentCardsComponent } from './Componednts/HomepageComponent/rent-cards/rent-cards.component';
 import { WeAspireComponent } from './Componednts/HomepageComponent/we-aspire/we-aspire.component';
 import { SalesCardsComponent } from './Componednts/HomepageComponent/sales-cards/sales-cards.component';
+import { BlogsCardComponent } from './Componednts/HomepageComponent/blogs-card/blogs-card.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SalesCardsComponent } from './Componednts/HomepageComponent/sales-cards
     RentCardsComponent,
     WeAspireComponent,
     SalesCardsComponent,
+    BlogsCardComponent,
   ],
   imports: [
     BrowserModule,
