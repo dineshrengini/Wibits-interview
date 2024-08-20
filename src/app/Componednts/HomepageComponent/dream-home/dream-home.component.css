@@ -1,0 +1,186 @@
+.main-container {
+    position: relative;
+    background: url('../../../../assets/Homepage-images/dream-home-img.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.main-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    padding: 50px;
+    gap: 30px;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    animation: slideUp 1s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.para-1 {
+    color: var(--white);
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    animation: slideUp 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.nav-pills {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+}
+
+.nav-pills .nav-link {
+    padding: 10px 25px;
+    color: var(--black);
+    background-color: #F1F1F1;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--white);
+    color: var(--lite-blue);
+    border-bottom: none;
+}
+
+.nav-item a {
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.search-box {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 0 10px 10px 10px;
+    padding: 50px;
+    z-index: 2;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.line {
+    border-right: 1px solid var(--gray);
+}
+
+.form-control {
+    border: none;
+}
+
+.form-group label {
+    color: var(--black);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.form-select {
+    border: none;
+}
+
+.form-select option,
+small {
+    color: var(--black);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#rentPriceRange,
+#salePriceRange {
+    width: 100%;
+}
+.btn {
+    padding: 15px;
+    background-color: var(--lite-blue);
+    color: var(--white);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+    font-weight: bold;
+}
+
+.adv-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adv-search span {
+    color: var(--black);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.adv-search i {
+    font-size: 18px;
+    padding-right: 10px;
+    font-weight: 700;
+}
+@media (max-width: 991px) {
+    .search-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .para-1 {
+        font-size: 14px;
+    }
+}

@@ -12,6 +12,7 @@ import { WeAspireComponent } from './Componednts/HomepageComponent/we-aspire/we-
 import { SalesCardsComponent } from './Componednts/HomepageComponent/sales-cards/sales-cards.component';
 import { BlogsCardComponent } from './Componednts/HomepageComponent/blogs-card/blogs-card.component';
 import { FooterComponent } from './Componednts/HomepageComponent/footer/footer.component';
+import { DreamHomeComponent } from './Componednts/HomepageComponent/dream-home/dream-home.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FooterComponent } from './Componednts/HomepageComponent/footer/footer.c
     SalesCardsComponent,
     BlogsCardComponent,
     FooterComponent,
+    DreamHomeComponent,
   ],
   imports: [
     BrowserModule,
