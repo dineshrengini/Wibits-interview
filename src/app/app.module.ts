@@ -11,6 +11,7 @@ import { RentCardsComponent } from './Componednts/HomepageComponent/rent-cards/r
 import { WeAspireComponent } from './Componednts/HomepageComponent/we-aspire/we-aspire.component';
 import { SalesCardsComponent } from './Componednts/HomepageComponent/sales-cards/sales-cards.component';
 import { BlogsCardComponent } from './Componednts/HomepageComponent/blogs-card/blogs-card.component';
+import { FooterComponent } from './Componednts/HomepageComponent/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BlogsCardComponent } from './Componednts/HomepageComponent/blogs-card/b
     WeAspireComponent,
     SalesCardsComponent,
     BlogsCardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

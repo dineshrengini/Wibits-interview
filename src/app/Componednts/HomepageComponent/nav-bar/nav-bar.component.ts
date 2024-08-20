@@ -6,20 +6,19 @@ import { Component } from '@angular/core';
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
-// Store open states of dropdowns
-private openDropdowns: Set<string> = new Set();
+  private openDropdowns: string | null = null;
 
-// Toggle dropdown state
-toggleDropdown(dropdownId: string): void {
-  if (this.openDropdowns.has(dropdownId)) {
-    this.openDropdowns.delete(dropdownId);
-  } else {
-    this.openDropdowns.add(dropdownId);
+  toggleDropdown(dropdownId: string): void {
+    if (this.openDropdowns === dropdownId) {
+      // If the clicked dropdown is already open, close it
+      this.openDropdowns = null;
+    } else {
+      // Open the clicked dropdown and close the previously open one
+      this.openDropdowns = dropdownId;
+    }
   }
-}
 
-// Check if a dropdown is open
-isDropdownOpen(dropdownId: string): boolean {
-  return this.openDropdowns.has(dropdownId);
-}
+  isDropdownOpen(dropdownId: string): boolean {
+    return this.openDropdowns === dropdownId;
+  }
 }
