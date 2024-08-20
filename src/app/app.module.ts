@@ -9,6 +9,7 @@ import { NavBarComponent } from './Componednts/HomepageComponent/nav-bar/nav-bar
 import { AboutSectionComponent } from './Componednts/HomepageComponent/about-section/about-section.component';
 import { RentCardsComponent } from './Componednts/HomepageComponent/rent-cards/rent-cards.component';
 import { WeAspireComponent } from './Componednts/HomepageComponent/we-aspire/we-aspire.component';
+import { SalesCardsComponent } from './Componednts/HomepageComponent/sales-cards/sales-cards.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { WeAspireComponent } from './Componednts/HomepageComponent/we-aspire/we-
     AboutSectionComponent,
     RentCardsComponent,
     WeAspireComponent,
+    SalesCardsComponent,
   ],
   imports: [
     BrowserModule,
